@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-space-900 text-white font-sans overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-space-800/60 backdrop-blur-xl border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+  
+  .text-glow-blue {
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.6);
+  }
+
+  .text-glow-purple {
+    text-shadow: 0 0 15px rgba(176, 38, 255, 0.6);
+  }
+  
+  .box-glow-blue {
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  }
+}
+
+/* Custom scrollbar for an immersive space theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050714; 
+}
+::-webkit-scrollbar-thumb {
+  background: #B026FF; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00F0FF; 
+}
