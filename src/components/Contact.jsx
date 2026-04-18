@@ -83,22 +83,22 @@ export const Contact = () => {
 
             <div className="mb-6 relative z-10">
               <label htmlFor="name" className="block text-sm font-space text-neon-blue mb-2 uppercase tracking-widest font-medium">Operator Name</label>
-              <input type="text" id="name" name="user_name" required className="w-full bg-space-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-neon-blue focus:bg-space-900 focus:shadow-[0_0_15px_rgba(0,240,255,0.3)] transition-all font-light" placeholder="John Doe" />
+              <input type="text" id="name" name="user_name" required className="w-full bg-space-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-neon-blue focus:bg-space-900 focus:shadow-[0_0_15px_rgba(0,240,255,0.3)] transition-all font-light" placeholder="Enter your Name" />
             </div>
 
             <div className="mb-6 relative z-10">
-              <label htmlFor="email" className="block text-sm font-space text-neon-purple mb-2 uppercase tracking-widest font-medium">Comms Frequency</label>
-              <input type="email" id="email" name="user_email" required className="w-full bg-space-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-neon-purple focus:bg-space-900 focus:shadow-[0_0_15px_rgba(176,38,255,0.3)] transition-all font-light" placeholder="john@example.com" />
+              <label htmlFor="email" className="block text-sm font-space text-neon-purple mb-2 uppercase tracking-widest font-medium">Operator Email</label>
+              <input type="email" id="email" name="user_email" required className="w-full bg-space-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-neon-purple focus:bg-space-900 focus:shadow-[0_0_15px_rgba(176,38,255,0.3)] transition-all font-light" placeholder="abc@example.com" />
             </div>
 
             <div className="mb-8 relative z-10">
-              <label htmlFor="message" className="block text-sm font-space text-neon-pink mb-2 uppercase tracking-widest font-medium">Transmission Payload</label>
+              <label htmlFor="message" className="block text-sm font-space text-neon-pink mb-2 uppercase tracking-widest font-medium">Message</label>
               <textarea id="message" name="message" required rows="4" className="w-full bg-space-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-neon-pink focus:bg-space-900 focus:shadow-[0_0_15px_rgba(255,0,127,0.3)] transition-all font-light resize-none flex-grow" placeholder="Your message here..." />
             </div>
 
             <button disabled={status === 'sending'} type="submit" className="group/btn relative w-full flex items-center justify-center gap-3 px-8 py-4 font-space font-bold text-white bg-space-800 border box-glow-blue border-neon-blue rounded-xl overflow-hidden transition-all hover:scale-[1.02] disabled:opacity-75 disabled:hover:scale-100">
               <span className="relative z-10">
-                {status === 'sending' ? 'Sending...' : status === 'success' ? 'Transmission Sent!' : status === 'error' ? 'Transmission Failed' : 'Send Transmission 🚀'}
+                {status === 'sending' ? 'Sending...' : status === 'success' ? 'Transmission Sent!' : status === 'error' ? 'Transmission Failed' : 'Send Transmission '}
               </span>
 
               {status === 'sending' ? (

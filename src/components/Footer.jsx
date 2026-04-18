@@ -17,7 +17,7 @@ export const Footer = () => {
         <p className="font-space text-gray-400 text-sm mb-4">Designed & Built by Ali Zafir Hussain</p>
         <div className="inline-block px-6 py-2 border border-neon-blue/30 rounded-full bg-neon-blue/5 box-glow-blue">
             <p className="font-space text-neon-blue uppercase tracking-[0.3em] text-xs animate-[pulse-glow_3s_ease-in-out_infinite]">
-            End of Transmission 👨‍🚀
+            End of Transmission 
             </p>
         </div>
       </div>

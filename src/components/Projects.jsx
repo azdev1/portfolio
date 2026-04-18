@@ -29,7 +29,7 @@ const projects = [
     bullets: [],
     tech: ['React', 'Node.js', 'MongoDB', 'Tailwind'],
     github: '#',
-    link: '#',
+    link: 'https://hotel-os-rpvw.vercel.app/',
     color: 'from-neon-purple to-neon-pink',
     glow: 'rgba(176, 38, 255, 0.3)',
     shadowClass: 'hover:shadow-[0_0_30px_rgba(176,38,255,0.3)]',
